@@ -138,11 +138,6 @@ body {
 #special-active-menu-4 {
 	background-color: #e74c3c !important;
 }
-@media (min-width: 768px) and (max-width: 991px) {
-	#slide-3 .content-row h2 {
-		min-height: 6em;
-	}
-}
 
 @media (max-width: 767px) {
 
@@ -362,10 +357,21 @@ body {
 	}
 
     .btn-default {
-        color: #FFF;
+        color: #E4E6E5;
         background-color: #077777;
         border-color: #5F5F5F;
     }
+    .btn-lg {
+        padding: 10px 16px;
+        font-size: 16px;
+        line-height: 1.33;
+        border-radius: 6px;
+    }
+    .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+    background-color: #5F5F5F;
+    border-color: #077777;
+    }
+}
 
 
 @media (max-width: 767px) {
@@ -392,6 +398,12 @@ body {
 	.content-row h4 {
 		font-size: 20px;
 	}
+    .btn-lg {
+    padding: 10px 16px;
+    font-size: 14px;
+    line-height: 1.33;
+    border-radius: 6px;
+    }
 }
 
 #slide-4-1 {
@@ -419,6 +431,7 @@ body {
 		font-size: 35px;
 		padding-bottom: 5px;
 		padding-top: 5px;
+        color:#077777;
 	}
 
 	.content-row {
@@ -439,10 +452,12 @@ body {
         color:#5F5F5F;
 	}
 
-	.content-row h4 {
+	h4 {
 		font-family: "Titillium Web", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 		font-size: 20px;
 		font-weight: 300;
+        margin-left: 10px;
+        margin-right: 10px;
 	}
 
 	i {
@@ -451,7 +466,7 @@ body {
 	}
 
     .btn-default {
-        color: #FFF;
+        color: #E4E6E5;
         background-color: #077777;
         border-color: #5F5F5F;
     }
@@ -478,8 +493,10 @@ body {
 		padding-bottom: 26px;
 	}
 
-	.content-row h4 {
+	h4 {
 		font-size: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
 	}
 }
 
@@ -507,15 +524,16 @@ body {
 		margin: 0;
 		padding: 0;
 		width: 502px;
-        border: 3px solid;
+        border: 1.5px solid;
         border-color: #E74C3C;
+        border-radius: 12px;
 	}
 
 	#slide-4 a,
 	#slide-4 img {
 		display: inline-block;
 		height: 70%;
-		margin: 0 auto;
+		margin: 5px auto;
 		width: 70%;
 	}
 
@@ -604,11 +622,21 @@ body {
 		padding-top: 40px;
 	}
 
+	#slide-5  h2 {
+		font-size: 28px;
+		padding-bottom: 40px;
+        color:#E4E6E5;
+	}
+
 
 @media (max-width: 767px) {
 	.with-hover-text{
 		margin-bottom: 2em;
 		margin-top: 1em;
+	}
+    h2 {
+		font-size: 24px;
+		padding-bottom: 26px;
 	}
 }
 

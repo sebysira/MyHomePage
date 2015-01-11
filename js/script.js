@@ -250,7 +250,7 @@ jQuery(document).ready(function ($) {
 ******************/
 jQuery(document).ready(function ($) {
 	//Cache some variables
-	var images = $('#slide-4 a');
+	var images = $('#slide-4 img');
 
 	images.hover(
 		function(e) {
