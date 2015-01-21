@@ -75,18 +75,7 @@
 			</div><!-- /.nav-collapse -->
 		</div><!-- /.container -->
 	</nav><!-- /.navbar -->
-
-	<!-- === Arrows === -->
-	<div id="arrows">
-		<div id="arrow-up" class="disabled"></div>
-		<div id="arrow-down"></div>
-		<div id="arrow-left" class="disabled visible-lg"></div>
-		<div id="arrow-right" class="disabled visible-lg"></div>
-	</div><!-- /.arrows -->
-
-
-	<!-- === MAIN Background === -->
-	<div class="slide story" id="slide-1" data-slide="1">
+    <div class="slide story" id="slide-1" data-slide="1">
 		<div class="container">
 			<div id="home-row-1" class="row clearfix">
 				<div class="col-12">
@@ -96,7 +85,13 @@
 			</div><!-- /row -->
 		</div><!-- /container -->
 	</div><!-- /slide1 -->
-
+	<!-- === Arrows === -->
+	<div id="arrows">
+		<div id="arrow-up" class="disabled"></div>
+		<div id="arrow-down"></div>
+		<div id="arrow-left" class="disabled visible-lg"></div>
+		<div id="arrow-right" class="disabled visible-lg"></div>
+	</div><!-- /.arrows -->
 	<!-- === Slide 2 === -->
 	<div class="slide story" id="slide-2" data-slide="2">
 		<div class="container">
@@ -109,20 +104,20 @@
                     <div class="row title-row">
 				        <div class="col-12 font-semibold">Sebastiano Siragusa</div>
                     </div>
-			         <div class="row subtitle-row">
-				        <div class="col-12 font-thin">Programmer</div>
-			         </div>
 					<h2 class="col-12 font-thin justify-text">Hello, I am Sebastiano Siragusa.
                                         I am 25 yearl old and I live in Italy.
                                         In 2013 I got a degree in computer science at University of Palermo.
                                         Currently attending the Master of Science in computer science at University of Catania , with Curriculum Data analysis and Multimedia.
                                         I am very fascinated with the technology's world , and in particular I love programming!</h2>
-                    <div class="col-lg-12 col-sm-12 col-md-12 regular-link">
+
+                <div class="subtitle-row regular-link">
+                    <div class="col-lg-12 col-sm-12 col-md-1">
                         <a href="files/Europass-CV-Siragusa-Sebastiano.pdf"
                             class="btn btn-default btn-lg" target="_blank">
                             <i class="fa fa-file-pdf-o"></i>  Curriculum Vitae
                         </a>
                     </div>
+                </div>
 				</div><!-- /col12 -->
 			</div><!-- /row -->
 		</div><!-- /container -->
@@ -173,95 +168,61 @@
 	</div><!-- /slide3 -->
 
     <!-- === SLide 4 - Works -->
-	<div class="slide story" id="slide-4-1" data-slide="4">
-        <div class="row title-row">
-				<div class="col-12 font-thin">My <span class="font-semibold">works</span></div>
-        </div><!-- /row -->
-		<div class="row" id="slide-4">
-			<span class="col-12 col-sm-6 col-lg-2" id="wk1">
-                    <div class="subtitle-row">
-				        <div class="font-semibold">MailParser</div>
-                    </div>
-                    <div class="col-sm-12 col-md-12">
-                        <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/mailparser.jpg" >
-                            <img class="thumb radius" src="images/portfolio/mailparser.jpg" alt="">
-                        </a>
-                    </div>
-                <h4 class="font-thin justify-text">MailParser is a program write in C that give in input files with emails (possibly collect by web crawler), clean the emails, order and insert them in a DB. Produce in output a 500MB files with cleaned and ordered emails. Write in collaboration with Cantarella Danilo & Randazzo Filippo. </h4>
+	<div class="slide story" id="slide-4" data-slide="4">
+		<div class="row" style="width: 2712px !important; left: 0px !important;">
+
+            <div class="col-12 col-sm-6 col-lg-2" id="wk1">
+                <div class="subtitle-row">
+                        <div class="font-semibold">MailParser</div>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                    <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/mailparser.jpg" >
+                        <img class="thumb radius" src="images/portfolio/mailparser.jpg" alt="">
+                    </a>
+                </div>
+                <h4 class="font-thin justify-text">MailParser is a program write in C that give in input files with emails (possibly collect by web crawler), clean the emails, order and insert them in a DB. Produce in output a 500MB files with cleaned and ordered emails.</h4>
 
                 <div class="subtitle-row regular-link">
                     <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
                         <a href="https://github.com/sebysira/mailParser"
                             class="btn btn-default btn-lg" target="_blank">
-                            <i class="fa fa-file-code-o"></i>   Code View
+                            <i class="fa fa-file-code-o"></i>   Code
                         </a>
                     </div>
                     <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
-                        <a href="https://github.com/sebysira/mailParser/archive/master.zip"
-                            class="btn btn-default btn-lg" target="_blank">
+                        <a href="https://github.com/sebysira/mailParser/archive/master.zip" class="btn btn-default btn-lg" target="_blank">
                             <i class="fa fa-download"></i>  Download
                         </a>
                     </div>
                 </div>
-        </span>
+            </div>
 
-            <!--
-			<div class="col-12 col-sm-6 col-lg-2">
-                <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p02-large.jpg">
-                    <img class="thumb" src="images/portfolio/p02-small.jpg" alt="">
-                </a>
+            <div class="col-12 col-sm-6 col-lg-2" id="wk2">
+                <div class="subtitle-row">
+                        <div class="font-semibold">Gmailduino</div>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                    <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/Gmail_ino_bread.png" >
+                        <img class="thumb radius" src="images/portfolio/Gmail_ino_bread.png" alt="">
+                    </a>
+                </div>
+                <h4 class="font-thin justify-text">Gmailduino is a Gmail Notifier that used Arduino UNO with a LCD Display, conjointly a Buzzer and a RGB Led, for notify when a new email is arrived, and allow to read sender and subject too. Notifications are sent by php server every 120 second (settable)</h4>
+
+                <div class="subtitle-row regular-link">
+                    <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+                        <a href="https://github.com/sebysira/gmailduino"
+                            class="btn btn-default btn-lg" target="_blank">
+                            <i class="fa fa-file-code-o"></i>   Code
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+                        <a href="https://github.com/sebysira/gmailduino/archive/master.zip" class="btn btn-default btn-lg" target="_blank">
+                            <i class="fa fa-download"></i>  Download
+                        </a>
+                    </div>
+                </div>
             </div>
-			<div class="col-12 col-sm-6 col-lg-2">
-                <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p09-large.jpg">
-                    <img class="thumb" src="images/portfolio/p09-small.jpg" alt="">
-                </a>
-            </div>
-			<div class="col-12 col-sm-6 col-lg-2">
-                <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p010-large.jpg">
-                    <img class="thumb" src="images/portfolio/p10-small.jpg" alt="">
-                </a>
-            </div>
-			<div class="col-12 col-sm-6 col-lg-2">
-                <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p05-large.jpg">
-                    <img class="thumb" src="images/portfolio/p05-small.jpg" alt="">
-                </a>
-            </div>
-			<div class="col-12 col-sm-6 col-lg-2">
-                <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p06-large.jpg">
-                    <img class="thumb" src="images/portfolio/p06-small.jpg" alt="">
-                </a>
-            </div>
-			<div class="col-12 col-sm-6 col-lg-2">
-                <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p07-large.jpg">
-                    <img class="thumb" src="images/portfolio/p07-small.jpg" alt="">
-                </a>
-            </div>
-			<div class="col-12 col-sm-6 col-lg-2">
-                <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p08-large.jpg">
-                    <img class="thumb" src="images/portfolio/p08-small.jpg" alt="">
-                </a>
-            </div>
-			<div class="col-12 col-sm-6 col-lg-2">
-                <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p03-large.jpg">
-                    <img class="thumb" src="images/portfolio/p03-small.jpg" alt="">
-                </a>
-            </div>
-			<div class="col-12 col-sm-6 col-lg-2">
-                <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p04-large.jpg">
-                    <img class="thumb" src="images/portfolio/p04-small.jpg" alt="">
-                </a>
-            </div>
-			<div class="col-12 col-sm-6 col-lg-2">
-                <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p11-large.jpg">
-                    <img class="thumb" src="images/portfolio/p11-small.jpg" alt="">
-                </a>
-            </div>
-			<div class="col-12 col-sm-6 col-lg-2">
-                <a data-fancybox-group="portfolio" class="fancybox" href="images/portfolio/p12-large.jpg">
-                    <img class="thumb" src="images/portfolio/p12-small.jpg" alt="">
-                </a>
-            </div>
-            -->
+
 		</div><!-- /row -->
 	</div><!-- /slide4 -->
 

@@ -87,6 +87,7 @@ $(document).ready(function(e) {
 	});
 
 });
+
 /******************
 * = Gallery width *
 ******************/
@@ -94,7 +95,7 @@ $(function() {
 	var pause = 50; // will only process code within delay(function() { ... }) every 100ms.
 	$(window).resize(function() {
 		delay(function() {
-				var gallery_images = $('#slide-4 span');
+				var gallery_images = $('#slide-4 .row div');
 
 				var images_per_row = 0;
 				if ( gallery_images.length % 2 == 0 ) {
@@ -103,19 +104,19 @@ $(function() {
 					images_per_row = gallery_images.length / 2 + 1;
 				}
 
-				var gallery_width = $('#slide-4 span').width() * $('#slide-4 span').length;
+				var gallery_width = $('#slide-4 .row div').width() * $('#slide-4 .row div').length;
 				gallery_width /= 2;
-				if ( $('#slide-4 span').length % 2 != 0 ) {
-					gallery_width += $('#slide-4 span').width();
+				if ( $('#slide-4 .row div').length % 2 != 0 ) {
+					gallery_width += $('#slide-4 .row div').width();
 				}
 
 				$('#slide-4 .row').css('width', gallery_width );
-
+/*
 				var left_pos = $('#slide-4 .row').width() - $('body').width();
 				left_pos /= -2;
 
 				$('#slide-4 .row').css('left', left_pos);
-
+*/
 			},
 			pause
 		);
