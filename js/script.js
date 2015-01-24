@@ -249,9 +249,10 @@ jQuery(document).ready(function ($) {
 /******************
 * = Gallery hover *
 ******************/
+/*
 jQuery(document).ready(function ($) {
 	//Cache some variables
-	var images = $('#slide-4 img');
+	var images = $('#slide-4 a');
 
 	images.hover(
 		function(e) {
@@ -281,6 +282,7 @@ jQuery(document).ready(function ($) {
 		}
 	);
 });
+*/
 
 /******************
 * = Arrows click  *
@@ -336,4 +338,9 @@ jQuery(document).ready(function ($) {
 			}
 		}
 	});
+});
+
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
 });
