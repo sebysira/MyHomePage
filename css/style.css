@@ -175,11 +175,11 @@ body {
 		font-size: 16px;
 		padding-left: 0;
 	}
-
+/*
 	.fa {
 		margin-right: 12px;
 	}
-
+*/
 	.nav li[data-slide="1"],
 	.nav li[data-slide="5"] {
 		background-color: #e4e6e5;
@@ -396,9 +396,9 @@ body {
     .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
     background-color: rgba(0, 0, 0, 0.4);;
     border-color: #E74C3C;
+    color: #E4E6E5;
     }
 }
-
 
 @media (max-width: 767px) {
 	.title-row {
@@ -450,9 +450,9 @@ body {
 	#slide-4 .col-12 {
 		display: inline-block;
 		height: 471px;
-		margin: 1.5px;
+		margin: auto;
 		padding: 0;
-		width: 472px;
+		width: 452px;
         border: 2px solid;
         border-color: #E74C3C;
         border-radius: 25px;
@@ -462,7 +462,7 @@ body {
 		padding-bottom: 5px;
 		padding-top: 5px;
 	}
-	#slide-4 a,
+    #slide-4 a ,
 	#slide-4 img {
 		display: inline-block;
 		height: 70%;
@@ -492,7 +492,6 @@ body {
 		height: auto;
 		max-height: 70%;
 		max-width: 70%;
-		width: auto;
 	}
     #slide-4 .subtitle-row {
 		font-size: 26px;
@@ -508,6 +507,17 @@ body {
 
     #slide-4 h4 {
 		font-size: 14px;
+	}
+    #slide-4 a {
+		display: inline-block;
+		height: 100%;
+		margin: 5px auto;
+		width: 60%;
+	}
+}
+@media (max-width: 991px) {
+	#slide-3 p {
+		margin-top: 50px;
 	}
 }
 
@@ -708,7 +718,9 @@ body {
 	cursor: pointer;
 }
   /* Border-Radius - coded by Helias - css3.openprogrammers.it */
-  .radius { border-radius: 1em;
+  .radius {
+      border-radius: 1em;
+      margin: auto;
   }
   .radius:hover { border-radius: 3em; }
 
@@ -731,29 +743,34 @@ body {
     background-color: #f1c40f;
 }
 
-#wk1 .font-semibold {
+#wk1 .font-semibold, #wk2 .font-semibold ,#wk3 .font-semibold {
     color:#E74C3C;
 }
 
 #wk2 {
-    background-color: #e67e22;
+    background-color: #95a5a6;
 }
 
-#wk2 img {
+#wk3 {
+    background-color: #2ecc71;
+}
+
+ #wk2 img , #wk3 img {
     display: inline-block;
-    height: 100%;
-    margin: 5px auto;
+    height: 70%;
+    margin: 6px auto;
     width: 100%;
 }
 
-#wk2 h4 {
-    padding-top: 30px;
+#wk1 img {
+		display: inline-block;
+		height: 70%;
+		margin: 5px auto;
+		width: 70%;
+	}
+.fa-youtube-square {
+    color: #cc181e;
 }
-
-#wk2 .font-semibold {
-    color:#E74C3C;
-}
-
 ::-moz-selection {
     text-shadow: none;
     background: #fcfcfc;
